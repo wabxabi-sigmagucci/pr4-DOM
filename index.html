@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOIR COFFEE — Відгуки</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page__head">
+      <p class="page__brand">NOIR COFFEE</p>
+      <h1 class="page__title">Відгуки наших гостей</h1>
+      <p class="page__lead">Нам важлива ваша думка. Поділіться враженнями від NOIR COFFEE.</p>
+    </header>
+
+    <section class="reviews" aria-labelledby="reviews-heading">
+      <h2 class="reviews__heading" id="reviews-heading">Відгуки (<span id="reviews-count">3</span>)</h2>
+      <div class="reviews__list" id="reviews-list">
+        <article class="review">
+          <h3 class="review__name">Анна</h3>
+          <p class="review__text">Дуже затишна атмосфера та неймовірна кава! Обов'язково повернуся.</p>
+        </article>
+        <article class="review">
+          <h3 class="review__name">Максим</h3>
+          <p class="review__text">Cappuccino просто чудовий. Приємний персонал і гарний інтер'єр.</p>
+        </article>
+        <article class="review">
+          <h3 class="review__name">Софія</h3>
+          <p class="review__text">Одне з моїх улюблених місць для ранкової кави.</p>
+        </article>
+      </div>
+    </section>
+
+    <form class="form" id="review-form" novalidate>
+      <h2 class="form__title">Залишити відгук</h2>
+
+      <label class="form__label" for="review-name">Ім'я</label>
+      <input class="form__control" type="text" id="review-name" maxlength="40" placeholder="Як вас звати?">
+      <p class="form__error" id="name-error"></p>
+
+      <label class="form__label" for="review-text">Ваш відгук</label>
+      <textarea class="form__control" id="review-text" rows="5" maxlength="400" placeholder="Що вам сподобалось?"></textarea>
+      <p class="form__hint"><span id="text-counter">0</span> / 400</p>
+      <p class="form__error" id="text-error"></p>
+
+      <button class="form__btn" type="submit">Надіслати відгук</button>
+
+      <p class="form__status" id="form-status" role="status"></p>
+    </form>
+  </main>
+</body>
+</html>

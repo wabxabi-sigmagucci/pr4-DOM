@@ -1,7 +1,7 @@
 # Практична робота №4
 ## Динамічна взаємодія з користувачем: маніпуляції з DOM, обробка подій та використання можливостей BOM у JavaScript
 
-https://wabxabi-sigmagucci.github.io/pr3-DOM/
+https://wabxabi-sigmagucci.github.io/pr4-DOM/
 
 ### Реалізований функціонал
 
